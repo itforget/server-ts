@@ -1,0 +1,11 @@
+{
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "server": "localhost",
+            "driver": "PostgreSQL",
+            "connectString": "postgresql://docker:docker@localhost:5432/server-ts?schema=public",
+            "name": "server-ts"
+        }
+    ]
+}

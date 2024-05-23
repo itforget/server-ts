@@ -1,0 +1,12 @@
+# docker run --name server-ts -e POSTGRESQL_USERNAME=docker -e POSTGRESQL_PASSWORD=docker -e POSTGRESQL_USERNAME=server-ts -p 5432:5432 bitnami/postgresql
+version: '3'
+
+services:
+  server-ts:
+    image: bitnami/postgresql
+    ports:
+      - 5432:5432
+    environment:
+      - POSTGRESQL_USERNAME=docker
+      - POSTGRESQL_PASSWORD=docker
+      - POSTGRESQL_DATABASE=server-ts
